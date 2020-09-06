@@ -29,3 +29,4 @@ yarn-error.log*
 .env.test.local
 .env.production.local
 /firebase/firebase-keys.json
+/firebase/firebase-keys.json
