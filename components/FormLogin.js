@@ -53,7 +53,7 @@ const FormLogin = (props) => {
 
     const handleEMAILClick = () => {
         // TODO: validar campos
-        createUserWithEmail(formulario.email, formulario.password);
+        // createUserWithEmail(formulario.email, formulario.password);
     }
     
 
