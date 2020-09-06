@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 
 import { Card, Form, Button } from 'react-bootstrap';
 import Layout from '../components/Layout';
-// import FormLogin from '../components/formLogin';
+import FormLogin from '../components/FormLogin';
 import GlobalProvider from "../components/context/globalContext";
 import { onAuthStateChanged } from '../firebase/client';
 // import ReactGA from 'react-ga';
@@ -10,7 +10,7 @@ import { onAuthStateChanged } from '../firebase/client';
 const loginPage = (props) => {
 /*
 	const [user, setUser] = useState(null)
-<FormLogin />
+
 	useEffect(() => {
 		 onAuthStateChanged(setUser)
 	}, [])
@@ -19,7 +19,7 @@ const loginPage = (props) => {
 	return (
 		<GlobalProvider.Provider  >
 			<Layout>
-				
+				<FormLogin />
 			</Layout>
 		</GlobalProvider.Provider>
 	)
