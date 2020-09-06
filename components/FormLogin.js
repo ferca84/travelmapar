@@ -32,7 +32,7 @@ const FormLogin = (props) => {
     const handleSubmit = (event) => {
         event.preventDefault();
         event.stopPropagation();
-
+        const form = event.currentTarget;
         if (form.checkValidity() === false) return;
 
         setValidated(true);
@@ -111,9 +111,6 @@ const FormLogin = (props) => {
                                 <br />
                                 <Link href="/registrar">
                                     <a>Registrarse</a>
-                                </Link>
-                                <Link href="/recuperar-password">
-                                    <a>¿Olvidaste tu Password?</a>
                                 </Link>
                             </div>
                         </Form>
